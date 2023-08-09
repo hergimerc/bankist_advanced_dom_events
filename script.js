@@ -34,10 +34,10 @@ document.addEventListener('keydown', function (e) {
 
 const header = document.querySelector('.header');
 const allSelections = document.querySelectorAll('.sections');
-console.log(allSelections);
+// console.log(allSelections);
 
 const allButtons = document.getElementsByTagName('button');
-console.log(allButtons);
+// console.log(allButtons);
 
 // Membuat objek DOM baru, tag = div dengan nama message
 const message = document.createElement('div');
@@ -63,3 +63,19 @@ document
   .addEventListener('click', function () {
     message.remove();
   });
+
+// styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+// Attribute
+const logo = document.querySelector('.nav__logo');
+console.log(logo.alt);
+console.log(logo.src);
+console.log(logo.className);
+
+// Non Standard
+console.log(logo.designer);
+console.log(logo.getAttribute('designer'));
